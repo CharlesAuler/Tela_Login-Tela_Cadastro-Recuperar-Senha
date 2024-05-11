@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Tela de Login</title>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="login-container">
+    <h1>Login</h1>
+    <form id="form" class="form">
+      <div class="form-control">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" placeholder="Digite seu E-mail" autocomplete="of">
+        <small>Mensagem de Erro</small>
+      </div>
+      <div class="form-control">
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua Senha">
+        <small>Mensagem de Erro</small>
+      </div>
+        <a href="#" id="forgot-pass">Esqueceu a senha?</a>
+        <input name="enviar" type="submit" value="login">
+    </form>
+    
+    
+    <div id="social-container">
+      <p>Ou entre pelas suas redes sociais</p>
+      <a href="https://accounts.google.com/v3/signin/identifier?hl=pt-br&ifkv=AaSxoQx4Do0hKt9DBFIRhGgkvmWV-L32H07AMXKJVpnXkY-H9MxQing0reGj3prBNkL7NAFei9A1wQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-703767137%3A1714710949519832&theme=mn&ddm=0"><i id="google" class='bx bxl-google'></i></a>
+      <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><i id="facebook" class='bx bxl-facebook-circle' ></i></a>
+      <a href="https://www.instagram.com/accounts/login/"><i id="instagram" class='bx bxl-instagram-alt'></i></a>
+    </div>
+    <div id="register-container">
+      <p>Ainda não tem uma conta?</p>
+      <a href="/Criar Conta/criar-conta.html">Registrar</a>
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>

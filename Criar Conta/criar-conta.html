@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <title>Criar Conta</title>
+  
+  <link rel="stylesheet" href="/Criar Conta/criar-conta.css">
+</head>
+
+
+<body>
+  <section class="criar-conta">
+    <div class="container">
+      <div class="header">
+        <h1>Criar Conta</h1>
+      </div>
+    
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="username">Nome:</label>
+          <input type="text" id="username" placeholder="Digite seu Nome">
+          <small>Mensagem de Erro</small>
+        </div>
+      
+        <div class="form-control">
+          <label for="email">E-mail:</label>
+          <input type="text" id="email" placeholder="Digite seu E-mail">
+          <small>Mensagem de Erro</small>
+        </div>
+      
+        <div class="form-control">
+          <label for="password">Senha:</label>
+          <input type="password" id="password" placeholder="Crie uma Nova Senha">
+          <small>Mensagem de Erro</small>
+        </div>
+      
+        <div class="form-control">
+          <label for="password-confirmation">Confirmar Senha:</label>
+          <input type="password" id="password-confirmation" placeholder="Confirme sua Senha">
+          <small>Mensagem de Erro</small>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+  <section class="recuperar-senha">
+    
+    <div class="recuperar-conteudo">
+      
+      <h2>Recuperação de Senha</h2><br><br>
+      
+      <form id="recoveryForm">
+        <label for="usernameOrEmail">Nome de usuário ou Email:</label><br>
+        <input type="text" id="usernameOrEmail" name="usernameOrEmail"><br>
+        
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+  
+  
+  <script src="/Criar Conta/criar-conta.js"></script>
+</body>
+</html>
+
+
+  <!--
+    document.getElementById("recoveryForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      var usernameOrEmail = document.getElementById("usernameOrEmail").value;
+      // Aqui você pode adicionar a lógica para validar os dados e enviar uma solicitação ao servidor para recuperar a senha
+      console.log("Solicitação de recuperação de senha para: " + usernameOrEmail);
+      // Por exemplo, você pode usar fetch() ou XMLHttpRequest para enviar uma solicitação AJAX
+    });  -->

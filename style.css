@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedgwick+Ave+Display&display=swap');
+
+/* ====== Geral ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #323232;
+  border: none;
+  font-size: 15pt;
+}
+
+body {
+  background-image: url("/imagens/fb2ea6cf28230797ab9dd427c48421ba.jpg");
+  background-size: cover;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+a, label {
+  font-size: .8rem;
+}
+
+a:hover {
+  color: #08558B;
+}
+/* ====== /Geral ====== */
+
+/* ====== Login-container ====== */
+#login-container {
+  background-color: #fff;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 30px;
+  margin-top: 10vh;
+  border-radius: 10px;
+  text-align: center;
+}
+/* ====== /Login-container ====== */
+
+/* ====== Formulário ====== */
+form {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+label, input {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  border-bottom: 2px solid #08558B;
+}
+
+forgot-pass {
+  text-align: right;
+  display: block;
+}
+
+input[type="submit"] {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 30px;
+  color: #fff;
+  background-color: #08558B;
+  cursor: pointer;
+  padding-bottom: 2rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #1B223C;
+  transition: .5s ease;
+}
+/* ====== /Formulário ====== */
+
+/* ====== Social-container ====== */
+#social-container, #social-container p {
+  margin-bottom: 20px;
+}
+
+#social-container i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  line-height: 37px;
+  color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#google {
+  background-color: #E1D545;
+}
+
+#facebook {
+  background-color: #0077B5;
+}
+
+#instagram {
+  background-color: #EE335C;
+}
+/* ====== /Social-container ====== */
+
+/* ====== Register-container ====== */
+#register-container p {
+  margin-bottom: 10px;
+}
+/* ====== /Register-container ====== */
+
+.form-control small {
+  position: relative;
+  font-size: 15px;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.success input {
+  border-color: green;
+}
+
+.form-control.error input {
+  border-color: red;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: red;
+  font-size: 14px;
+}
+
+
